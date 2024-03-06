@@ -14,7 +14,7 @@ declare global {
       "swiper-container": React.DetailedHTMLProps<
         React.HTMLAttributes<HTMLElement>,
         HTMLElement
-      >;
+      > & { "slides-per-view": string; pagination: { clickable: boolean } };
       "swiper-slide": React.DetailedHTMLProps<
         React.HTMLAttributes<HTMLElement>,
         HTMLElement

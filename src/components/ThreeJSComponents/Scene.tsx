@@ -18,7 +18,7 @@ function Scene() {
   const handleMeshClick = (index: number) => {
     if (orbitControlsRef.current) {
       const deg = (360 / segments) * index;
-      orbitControlsRef.current.setAzimuthalAngle(
+      (orbitControlsRef.current as any).setAzimuthalAngle(
         THREE.MathUtils.degToRad(-deg),
       );
     }
