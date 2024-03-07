@@ -9,3 +9,49 @@ canvas {
     rgb(0, 0, 0)
   );
 }
+
+.work-slider .slick-list {
+  transition: height 0.3s;
+}
+
+.work-slider .slick-dots {
+  bottom: 25px;
+  padding: 0 25px;
+  text-align: left;
+}
+
+.work-slider .slick-dots li {
+  width: 40px;
+  height: 3px;
+  border-radius: 1000px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(32, 32, 32, 0.87);
+}
+
+.work-slider .slick-dots li.slick-active {
+  background-color: #ff0000;
+}
+
+.work-slider .slick-dots li button {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.work-slider .slick-dots li button::before {
+  font-size: 0;
+  width: 0;
+  height: 0;
+}
+
+@media (max-width: 600px) {
+  .work-slider .slick-dots {
+    bottom: -25px;
+    padding: 0 10px;
+    text-align: center;
+  }
+  .work-slider .slick-dots li {
+    width: 5px;
+    height: 5px;
+  }
+}

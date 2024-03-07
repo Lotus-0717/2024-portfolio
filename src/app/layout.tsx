@@ -24,8 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div>
-          <Scene></Scene>
+        <Scene></Scene>
+        <div className=" absolute bottom-5 w-full text-center text-white">
+          <p>Designed and coded by Steven Yeh © 2024</p>
         </div>
         <div className={`${poppins.className} ${nstc.className}`}>
           {children}

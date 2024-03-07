@@ -1,6 +1,6 @@
 "use client";
 
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import Cylinder from "./Cylinder";
 import {
   Environment,
@@ -23,6 +23,7 @@ function Scene() {
       );
     }
   };
+
   return (
     <div className="fixed -z-10 h-screen w-full">
       <Canvas>
@@ -45,15 +46,16 @@ function Scene() {
         <Environment preset="city" />
         <PerspectiveCamera
           makeDefault
-          position={[0, 1, 6]}
-          fov={60}
-          zoom={0.9}
+          position={[0, 0.5, 5.5]}
+          fov={50}
+          zoom={1}
         />
         <Cylinder
           onMeshClick={handleMeshClick}
           radius={radius}
           height={height}
           segments={segments}
+          orbitControlsRef={orbitControlsRef}
         />
       </Canvas>
     </div>
