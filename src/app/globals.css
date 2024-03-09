@@ -46,7 +46,6 @@ canvas {
 
 @media (max-width: 600px) {
   .work-slider .slick-dots {
-    bottom: -25px;
     padding: 0 10px;
     text-align: center;
   }
