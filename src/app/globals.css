@@ -10,8 +10,8 @@ canvas {
   );
 }
 
-.work-slider .slick-list {
-  transition: height 0.3s;
+.work-slider .slick-slide * {
+  outline: none;
 }
 
 .work-slider .slick-dots {
@@ -29,7 +29,7 @@ canvas {
 }
 
 .work-slider .slick-dots li.slick-active {
-  background-color: #ff0000;
+  background-color: #ff5f5f;
 }
 
 .work-slider .slick-dots li button {
