@@ -54,7 +54,7 @@ function Cylinder({
         setIsClick(false);
         setTimeout(() => {
           router.push(`/work/${targetIndex}`);
-        }, 500);
+        }, 300);
       }
     }
   });
