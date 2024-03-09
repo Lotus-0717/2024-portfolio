@@ -29,7 +29,7 @@ export default function Post({ params }: any) {
     <div className="fixed z-10 h-screen w-full bg-black/30 backdrop-blur">
       <div className="h-screen w-full overflow-auto">
         <div className=" min-h-screen bg-white/80 p-5 md:ml-[50%] md:w-1/2">
-          <div className="flex">
+          <div className="flex justify-end md:justify-start">
             <X
               className=" cursor-pointer"
               size={36}
@@ -88,7 +88,7 @@ export default function Post({ params }: any) {
               ""
             )}
             <div className="mt-10">
-              <h3 className="text-5xl font-bold uppercase italic">
+              <h3 className="text-3xl font-bold uppercase italic md:text-5xl">
                 <p>{caseinfo["project-name"]}</p>
               </h3>
             </div>

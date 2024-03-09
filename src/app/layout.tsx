@@ -12,8 +12,8 @@ const nstc = Noto_Sans_TC({
 });
 
 export const metadata: Metadata = {
-  title: "Lotus's Portfolio",
-  description: "test",
+  title: "Steven Yeh's Portfolio",
+  description: "Steven Yeh's Portfolio",
 };
 
 export default function RootLayout({
